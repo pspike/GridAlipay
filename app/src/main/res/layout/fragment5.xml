@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFE0E0E0"
+              android:orientation="vertical"
+              android:paddingTop="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0B0B0">
+
+                <TableRow
+                    android:id="@+id/trWeixinLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.01dp"
+                    android:layout_marginTop="0.01dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/icon_share_weixin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="微信登陆"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <com.example.sundychang.fragmenttabhost.CustomList.SettingListView
+                android:id="@+id/lvSettingSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+
+            </com.example.sundychang.fragmenttabhost.CustomList.SettingListView>
+
+            <com.example.sundychang.fragmenttabhost.CustomList.SettingSwitchListView
+                android:id="@+id/lvSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+
+            </com.example.sundychang.fragmenttabhost.CustomList.SettingSwitchListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
